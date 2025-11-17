@@ -6,9 +6,9 @@ Este repositorio contiene instrucciones, ejemplos de código y configuraciones n
 # 🔧 Instalación del IDE y soporte del DuinoBot
 
 ## 1. Instalar Arduino IDE  
-Descargar desde: **https://www.arduino.cc**
+Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas.**https://www.arduino.cc**
 
-En Linux, ejecutar desde la carpeta del IDE:
+Abrir la terminal en la carpeta de el IDE 1.8.19 con el siguiente comando:
 
 ```bash
 ./arduino
