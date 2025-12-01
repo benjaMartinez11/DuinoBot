@@ -89,6 +89,75 @@ void loop() {
 
 ---
 
-## **10/20 — Instalación de Arduino IDE**
+## **Conexiones del JY-MCU**
 
 <img src="imagenes/Captura de pantalla_2025-12-01_19-18-29.png" width="400">
+
+
+## **Codigo del ESP-32**
+
+#include <WiFi.h>
+#include <PubSubClient.h>
+
+
+const char* ssid = "PEINE-3";
+const char* password = "etecPeine3";
+const char* mqtt_server = "10.56.2.74"; // Ej: "192.168.0.10"
+
+
+WiFiClient espClient;
+PubSubClient client(espClient);
+
+
+void callback(char* topic, byte* message, unsigned int length) {
+
+
+ Serial.print("Mensaje MQTT -> ");
+ String msg;
+
+
+ for (int i = 0; i < length; i++) {
+   msg += (char)message[i];
+ }
+
+
+ Serial.println(msg);
+
+
+ // Reenviar al Duinobot por Serial2
+ Serial2.print(msg);
+}
+
+
+void reconnect() {
+ while (!client.connected()) {
+   if (client.connect("ESP32Cliente")) {
+     client.subscribe("/robot/movimiento");
+   } else {
+     delay(2000);
+   }
+ }
+}
+
+
+void setup() {
+ Serial.begin(115200);
+
+
+ // Comunicación serial hacia Duinobot
+ Serial2.begin(9600, SERIAL_8N1, 16, 17); // RX=16, TX=17
+
+
+ // Conectar WiFi
+ WiFi.begin(ssid, password);
+ while (WiFi.status() != WL_CONNECTED) delay(500);
+
+
+ // Configurar MQTT
+ client.setServer(mqtt_server, 1883);
+ client.setCallback(callback);
+}
+void loop() {
+ if (!client.connected()) reconnect();
+ client.loop();
+}
