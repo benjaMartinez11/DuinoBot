@@ -19,11 +19,11 @@
 
 ## Pasos (Windows / macOS / Linux)
 
-    Instalar Arduino IDE
+    1.Instalar Arduino IDE
 
         Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
 
-    Agregar el soporte del DuinoBot al Board Manager
+    2.Agregar el soporte del DuinoBot al Board Manager
 
         Abre Arduino IDE → File (Archivo) → Preferences (Ajustes).
 
@@ -33,13 +33,13 @@ https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLi
 
     Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usás IDE 2.x). GitHub+1
 
-    Instalar el paquete de placas
+    3.Instalar el paquete de placas
 
         Arduino IDE → Tools (Herramientas) → Board (Placa) → Boards Manager…
 
         Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente. GitHub
 
-    Seleccionar la placa y la configuración
+    4.Seleccionar la placa y la configuración
 
         Tools → Board → seleccioná la entrada Duinobot v2.3 / Multiplo N6-MAX (ATmega1284) o la opción equivalente dentro del paquete.
 
@@ -47,7 +47,7 @@ https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLi
 
         Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). GitHub
 
-    Seleccionar puerto y programador
+    5.Seleccionar puerto y programador
 
         Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
 
