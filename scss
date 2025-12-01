@@ -1,0 +1,22 @@
+
+### Configuración del Arduino IDE para DuinoBot  
+1. Abrir:  
+   `Arduino IDE → Tools → Board → Boards Manager…`  
+2. Buscar **Duinobot AVR Boards** e instalar.  
+3. Seleccionar la placa:  
+   `Tools → Board → Duinobot v2.3 / Multiplo N6-MAX (ATmega1284)`  
+4. Seleccionar variante:  
+   `Tools → CPU / Variant → ATmega1284`  
+
+### Código Blink de prueba
+
+```cpp
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(500);
+}

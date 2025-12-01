@@ -1,21 +1,40 @@
-# "Vehículo controlado a distancia" DuinoBot v2.3 – Guía de Instalación, Configuración y Códigos de Ejemplo
-
-Este repositorio contiene instrucciones, ejemplos de código y configuraciones necesarias para trabajar con la placa **DuinoBot v2.3 / Multiplo N6-MAX (ATmega1284)** utilizando el **Arduino IDE**, así como ejemplos de conexión y control vía Bluetooth usando un módulo **HC-06 / JY-MCU**.
+# 🚗 Robot Múltiplo N6 — DuinoBot v2.3  
+**Controlado por Bluetooth / MQTT — Documentación completa**
 
 ---
-# 🔧 Instalación del IDE y soporte del DuinoBot
 
-## 1. Instalar Arduino IDE  
+## 👥 Integrantes
+- Adan Coronel  
+- Benjamín Martinez
 
-![](file:///home/etec/Descargas/1000117783.jpg)
-# Proyecto de Robots 🤖
-
-Este repositorio contiene fotos, documentación y código del robot que estoy desarrollando.
+---
 
 ## 📸 Foto del robot
 
-<img src="file:///home/etec/Descargas/1000117783.jpg" width="350">
+<img src="images/robot1.jpg" width="400">
 
-## 🧠 Código
+---
 
-Dentro de la carpeta `robot/` está el código utilizado para el movimiento y sensores.
+# 🛠️ Avances por fecha
+
+## **20/10 — Armado y baterías**
+- Se finalizó el armado de la tercera rueda.
+- Se testearon las baterías con multímetro (tienen que marcar ~1.2 V).
+- Se cargaron las baterías necesarias.
+- Luego se probaron en el robot.
+
+---
+
+## **10/20 — Instalación de Arduino IDE**
+- Instalación de **Arduino IDE 1.8.19** desde la página oficial.
+- Inicialización con el comando:
+
+🔵 Bluetooth — Módulo JY-MCU / HC-06
+Conexiones
+JY-MCU	DuinoBot
+TX	RX (0)
+RX	TX (1)
+GND	GND
+VCC	5V
+📌 Recordatorio
+Antes de subir el código → Desconectar el cable 5V del Bluetooth.
