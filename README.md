@@ -90,15 +90,5 @@ void loop() {
 ---
 
 ## **10/20 — Instalación de Arduino IDE**
-- Instalación de **Arduino IDE 1.8.19** desde la página oficial.
-- Inicialización con el comando:
 
-🔵 Bluetooth — Módulo JY-MCU / HC-06
-Conexiones
-JY-MCU	DuinoBot
-TX	RX (0)
-RX	TX (1)
-GND	GND
-VCC	5V
-📌 Recordatorio
-Antes de subir el código → Desconectar el cable 5V del Bluetooth.
+<img src="imagenes/DuinoBot/imagenes/Captura de pantalla_2025-12-01_19-18-29.png" width="400">
