@@ -11,7 +11,7 @@
 
 ## 📸 Foto del robot
 
-<img src="images/robot1.jpg" width="400">
+<img src="imagenes/1000117783.jpg" width="400">
 
 ---
 
