@@ -91,4 +91,4 @@ void loop() {
 
 ## **10/20 — Instalación de Arduino IDE**
 
-<img src="imagenes/DuinoBot/imagenes/Captura de pantalla_2025-12-01_19-18-29.png" width="400">
+<img src="imagenes/Captura de pantalla_2025-12-01_19-18-29.png" width="400">
