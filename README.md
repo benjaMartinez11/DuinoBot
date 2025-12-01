@@ -7,3 +7,4 @@ Este repositorio contiene instrucciones, ejemplos de código y configuraciones n
 
 ## 1. Instalar Arduino IDE  
 
+file:///home/etec/Descargas/1000117783.jpg
