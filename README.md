@@ -8,3 +8,14 @@ Este repositorio contiene instrucciones, ejemplos de código y configuraciones n
 ## 1. Instalar Arduino IDE  
 
 ![](file:///home/etec/Descargas/1000117783.jpg)
+# Proyecto de Robots 🤖
+
+Este repositorio contiene fotos, documentación y código del robot que estoy desarrollando.
+
+## 📸 Foto del robot
+
+<img src="file:///home/etec/Descargas/1000117783.jpg" width="350">
+
+## 🧠 Código
+
+Dentro de la carpeta `robot/` está el código utilizado para el movimiento y sensores.
