@@ -15,9 +15,7 @@
 
 ---
 
-# 🛠️ Avances por fecha
-
-## Pasos (Windows / macOS / Linux)
+# 🛠️ Pasos (Windows / macOS / Linux)
 
     1.Instalar Arduino IDE
 
