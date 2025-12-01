@@ -52,6 +52,41 @@ https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLi
         Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
 
         En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible. GitHub
+        
+
+    6.Subir un sketch de prueba (Blink)
+
+        Abre el ejemplo File → Examples → 01.Basics → Blink.
+
+        Uso recomendado: reemplazar LED_BUILTIN por el pin que indique el pinout si el LED integrado no responde; pero probá primero con LED_BUILTIN.
+
+        Click Upload (flecha). Si todo está bien, compila y sube.
+
+Ejemplo (idéntico al ejemplo Arduino):
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(500);
+}
+
+    7.Si falla la carga por serial (problemas comunes)
+
+        Confirmá puerto y drivers (ej. chips CH340/FTDI).
+
+        Si la placa no tiene bootloader compatible o nunca se le grabó el bootloader del paquete, puede ser necesario grabar el bootloader usando otra placa Arduino como programador (ArduinoISP) — el repo oficial del paquete explica cómo hacerlo (conexiones y pasos). GitHub+1
+
+    8.Quemar bootloader (solo si indica el paquete / la placa lo requiere)
+
+        Programá un UNO/Nano con el sketch ArduinoISP (Arduino → Examples → 11.ArduinoISP → ArduinoISP). Conectá ISP (MOSI/MISO/SCK/GND/Reset) según las tablas del repositorio.
+
+        En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader. GitHub
+
+
 
 
 ---
