@@ -7,4 +7,4 @@ Este repositorio contiene instrucciones, ejemplos de código y configuraciones n
 
 ## 1. Instalar Arduino IDE  
 
-![Portal and Flow](file:///home/etec/Descargas/1000117783.jpg)
+![](file:///home/etec/Descargas/1000117783.jpg)
