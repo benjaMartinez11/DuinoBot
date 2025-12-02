@@ -163,6 +163,8 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
       client.loop();
       }
 
+<img src="imagenes/imagenes/esp32-devkitc-v4-esp32-wifi-micro-usb.jpg" width="400">
+
 ## **Codigo del DuinoBot**
 
     #include <DCMotor.h>
@@ -229,3 +231,6 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
       }
       }
     }
+
+
+<img src="imagenes/imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
