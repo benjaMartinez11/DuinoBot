@@ -238,7 +238,7 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 <img src="imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
 
 ## **Diagrama de Bloques**
-<img src="imagenes/Proyecto - RobotGroup.png" width="400">
+<img src="imagenes/Captura de pantalla_2025-12-02_14-36-59.png" width="400">
 
 ## **Diagrama de Flujo**
-<img src="imagenes/Proyecto - RobotGroup123.png" width="400">
+<img src="imagenes/Captura de pantalla_2025-12-02_14-35-26.png" width="400">
