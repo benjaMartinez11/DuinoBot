@@ -165,7 +165,7 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
 ## **Foto del ESP-32**
 
-<img src="imagenes/imagenes/esp32-devkitc-v4-esp32-wifi-micro-usb.jpg" width="400">
+<img src="imagenes/esp32-devkitc-v4-esp32-wifi-micro-usb.jpg" width="400">
 
 ## **Codigo del DuinoBot**
 
@@ -235,4 +235,4 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
     }
 
 ## **Foto dela Placa duinobot v2.3**
-<img src="imagenes/imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
+<img src="imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
