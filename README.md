@@ -20,13 +20,13 @@
 
 1.Instalar Arduino IDE
 
-    Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
+  Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
 
 2.Agregar el soporte del DuinoBot al Board Manager
 
-    Abre Arduino IDE → File (Archivo) → Preferences (Ajustes).
+  Abre Arduino IDE → File (Archivo) → Preferences (Ajustes).
 
-    En Additional Boards Manager URLs pega esta URL:
+  En Additional Boards Manager URLs pega esta URL:
 
       https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_DuinobotAVRBoards_index.json
 
