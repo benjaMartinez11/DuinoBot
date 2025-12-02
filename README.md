@@ -34,32 +34,32 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
 3.Instalar el paquete de placas
 
-    Arduino IDE → Tools (Herramientas) → Board (Placa) → Boards Manager…
+  Arduino IDE → Tools (Herramientas) → Board (Placa) → Boards Manager…
 
-    Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente. GitHub
+  Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente. GitHub
 
 4.Seleccionar la placa y la configuración
 
-    Tools → Board → seleccioná la entrada Duinobot v2.3 / Multiplo N6-MAX (ATmega1284) o la opción equivalente dentro del paquete.
+  Tools → Board → seleccioná la entrada Duinobot v2.3 / Multiplo N6-MAX (ATmega1284) o la opción equivalente dentro del paquete.
 
-    Tools → CPU / Variant → elegí ATmega1284 (si hay sub-opciones).
+  Tools → CPU / Variant → elegí ATmega1284 (si hay sub-opciones).
 
-    Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). GitHub
+  Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). GitHub
 
 5.Seleccionar puerto y programador
 
-    Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
+  Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
 
-    En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible. GitHub
+  En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible. GitHub
     
 
-6.Subir un sketch de prueba (Blink)
+ 6.Subir un sketch de prueba (Blink)
 
-    Abre el ejemplo File → Examples → 01.Basics → Blink.
+  Abre el ejemplo File → Examples → 01.Basics → Blink.
 
-    Uso recomendado: reemplazar LED_BUILTIN por el pin que indique el pinout si el LED integrado no responde; pero probá primero con LED_BUILTIN.
+  Uso recomendado: reemplazar LED_BUILTIN por el pin que indique el pinout si el LED integrado no responde; pero probá primero con LED_BUILTIN.
 
-    Click Upload (flecha). Si todo está bien, compila y sube.
+  Click Upload (flecha). Si todo está bien, compila y sube.
 
       Ejemplo (idéntico al ejemplo Arduino):
 
@@ -73,17 +73,17 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
         delay(500);
       }
 
-    7.Si falla la carga por serial (problemas comunes)
+ 7.Si falla la carga por serial (problemas comunes)
 
-        Confirmá puerto y drivers (ej. chips CH340/FTDI).
+  Confirmá puerto y drivers (ej. chips CH340/FTDI).
 
-        Si la placa no tiene bootloader compatible o nunca se le grabó el bootloader del paquete, puede ser necesario grabar el bootloader usando otra placa Arduino como programador (ArduinoISP) — el repo oficial del paquete explica cómo hacerlo (conexiones y pasos). GitHub+1
+  Si la placa no tiene bootloader compatible o nunca se le grabó el bootloader del paquete, puede ser necesario grabar el bootloader usando otra placa Arduino como programador (ArduinoISP) — el repo oficial del paquete explica cómo hacerlo (conexiones y pasos). GitHub+1
 
-    8.Quemar bootloader (solo si indica el paquete / la placa lo requiere)
+  8.Quemar bootloader (solo si indica el paquete / la placa lo requiere)
 
-        Programá un UNO/Nano con el sketch ArduinoISP (Arduino → Examples → 11.ArduinoISP → ArduinoISP). Conectá ISP (MOSI/MISO/SCK/GND/Reset) según las tablas del repositorio.
+    Programá un UNO/Nano con el sketch ArduinoISP (Arduino → Examples → 11.ArduinoISP → ArduinoISP). Conectá ISP (MOSI/MISO/SCK/GND/Reset) según las tablas del repositorio.
 
-        En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader. GitHub
+    En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader. GitHub
 
 
 
@@ -162,3 +162,5 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
       if (!client.connected()) reconnect();
       client.loop();
       }
+
+## **Conexiones del JY-MCU**
