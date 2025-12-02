@@ -236,3 +236,9 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
 ## **Foto dela Placa duinobot v2.3**
 <img src="imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
+
+## **Diagrama de Bloques**
+<img src="imagenes/Proyecto - RobotGroup.png" width="400">
+
+## **Diagrama de Flujo**
+<img src="imagenes/Proyecto - RobotGroup123.png" width="400">
