@@ -1,4 +1,5 @@
-# 🚗 Robot Múltiplo N6 — DuinoBot v2.3  
+# 🚗 Vehículo controlado a distancia
+# Robot Múltiplo N6 — DuinoBot v2.3  
 **Controlado por Bluetooth / MQTT — Documentación completa**
 
 ---
@@ -17,60 +18,60 @@
 
 # 🛠️ Pasos (Windows / macOS / Linux)
 
-    1.Instalar Arduino IDE
+1.Instalar Arduino IDE
 
-        Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
+    Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
 
-    2.Agregar el soporte del DuinoBot al Board Manager
+2.Agregar el soporte del DuinoBot al Board Manager
 
-        Abre Arduino IDE → File (Archivo) → Preferences (Ajustes).
+    Abre Arduino IDE → File (Archivo) → Preferences (Ajustes).
 
-        En Additional Boards Manager URLs pega esta URL:
+    En Additional Boards Manager URLs pega esta URL:
 
-https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_DuinobotAVRBoards_index.json
+      https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_DuinobotAVRBoards_index.json
 
-    Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usás IDE 2.x). GitHub+1
+Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usás IDE 2.x). GitHub+1
 
-    3.Instalar el paquete de placas
+3.Instalar el paquete de placas
 
-        Arduino IDE → Tools (Herramientas) → Board (Placa) → Boards Manager…
+    Arduino IDE → Tools (Herramientas) → Board (Placa) → Boards Manager…
 
-        Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente. GitHub
+    Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente. GitHub
 
-    4.Seleccionar la placa y la configuración
+4.Seleccionar la placa y la configuración
 
-        Tools → Board → seleccioná la entrada Duinobot v2.3 / Multiplo N6-MAX (ATmega1284) o la opción equivalente dentro del paquete.
+    Tools → Board → seleccioná la entrada Duinobot v2.3 / Multiplo N6-MAX (ATmega1284) o la opción equivalente dentro del paquete.
 
-        Tools → CPU / Variant → elegí ATmega1284 (si hay sub-opciones).
+    Tools → CPU / Variant → elegí ATmega1284 (si hay sub-opciones).
 
-        Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). GitHub
+    Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). GitHub
 
-    5.Seleccionar puerto y programador
+5.Seleccionar puerto y programador
 
-        Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
+    Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
 
-        En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible. GitHub
-        
+    En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible. GitHub
+    
 
-    6.Subir un sketch de prueba (Blink)
+6.Subir un sketch de prueba (Blink)
 
-        Abre el ejemplo File → Examples → 01.Basics → Blink.
+    Abre el ejemplo File → Examples → 01.Basics → Blink.
 
-        Uso recomendado: reemplazar LED_BUILTIN por el pin que indique el pinout si el LED integrado no responde; pero probá primero con LED_BUILTIN.
+    Uso recomendado: reemplazar LED_BUILTIN por el pin que indique el pinout si el LED integrado no responde; pero probá primero con LED_BUILTIN.
 
-        Click Upload (flecha). Si todo está bien, compila y sube.
+    Click Upload (flecha). Si todo está bien, compila y sube.
 
-Ejemplo (idéntico al ejemplo Arduino):
+      Ejemplo (idéntico al ejemplo Arduino):
 
-void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
-}
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
-}
+      void setup() {
+        pinMode(LED_BUILTIN, OUTPUT);
+      }
+      void loop() {
+        digitalWrite(LED_BUILTIN, HIGH);
+        delay(500);
+        digitalWrite(LED_BUILTIN, LOW);
+        delay(500);
+      }
 
     7.Si falla la carga por serial (problemas comunes)
 
@@ -96,68 +97,68 @@ void loop() {
 
 ## **Codigo del ESP-32**
 
-#include <WiFi.h>
-#include <PubSubClient.h>
+      #include <WiFi.h>
+      #include <PubSubClient.h>
 
 
-const char* ssid = "PEINE-3";
-const char* password = "etecPeine3";
-const char* mqtt_server = "10.56.2.74"; // Ej: "192.168.0.10"
+      const char* ssid = "PEINE-3";
+      const char* password = "etecPeine3";
+      const char* mqtt_server = "10.56.2.74"; // Ej: "192.168.0.10"
 
 
-WiFiClient espClient;
-PubSubClient client(espClient);
+      WiFiClient espClient;
+      PubSubClient client(espClient);
 
 
-void callback(char* topic, byte* message, unsigned int length) {
+      void callback(char* topic, byte* message, unsigned int length) {
 
 
- Serial.print("Mensaje MQTT -> ");
- String msg;
+      Serial.print("Mensaje MQTT -> ");
+      String msg;
 
 
- for (int i = 0; i < length; i++) {
-   msg += (char)message[i];
- }
+      for (int i = 0; i < length; i++) {
+        msg += (char)message[i];
+      }
 
 
- Serial.println(msg);
+      Serial.println(msg);
 
 
- // Reenviar al Duinobot por Serial2
- Serial2.print(msg);
-}
+      // Reenviar al Duinobot por Serial2
+      Serial2.print(msg);
+      }
 
 
-void reconnect() {
- while (!client.connected()) {
-   if (client.connect("ESP32Cliente")) {
-     client.subscribe("/robot/movimiento");
-   } else {
-     delay(2000);
-   }
- }
-}
+      void reconnect() {
+      while (!client.connected()) {
+        if (client.connect("ESP32Cliente")) {
+          client.subscribe("/robot/movimiento");
+        } else {
+          delay(2000);
+        }
+      }
+      }
 
 
-void setup() {
- Serial.begin(115200);
+      void setup() {
+      Serial.begin(115200);
 
 
- // Comunicación serial hacia Duinobot
- Serial2.begin(9600, SERIAL_8N1, 16, 17); // RX=16, TX=17
+      // Comunicación serial hacia Duinobot
+      Serial2.begin(9600, SERIAL_8N1, 16, 17); // RX=16, TX=17
 
 
- // Conectar WiFi
- WiFi.begin(ssid, password);
- while (WiFi.status() != WL_CONNECTED) delay(500);
+      // Conectar WiFi
+      WiFi.begin(ssid, password);
+      while (WiFi.status() != WL_CONNECTED) delay(500);
 
 
- // Configurar MQTT
- client.setServer(mqtt_server, 1883);
- client.setCallback(callback);
-}
-void loop() {
- if (!client.connected()) reconnect();
- client.loop();
-}
+      // Configurar MQTT
+      client.setServer(mqtt_server, 1883);
+      client.setCallback(callback);
+      }
+      void loop() {
+      if (!client.connected()) reconnect();
+      client.loop();
+      }
