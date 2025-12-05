@@ -14,6 +14,10 @@
 
 <img src="imagenes/1000117783.jpg" width="400">
 
+## 📸 Foto del circuito del robot
+
+<img src="imagenes/IMG_20251201_191544856_HDR.jpg" width="400">
+
 ---
 
 # 🛠️ Pasos (Windows / macOS / Linux)
@@ -90,9 +94,9 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
 ---
 
-## **Conexiones del JY-MCU**
+## **Conexiones del NodeMCU-32**
 
-<img src="imagenes/Captura de pantalla_2025-12-01_19-18-29.png" width="400">
+<img src="imagenes/Captura de pantalla_2025-12-05_10-54-16.png" width="400">
 
 
 ## **Codigo del ESP-32**
