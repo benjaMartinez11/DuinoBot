@@ -16,7 +16,7 @@
 
 ## 📸 Foto del circuito del robot
 
-<img src="imagenes/1000117783.jpg" width="400">
+<img src="imagenes/IMG_20251201_191544856_HDR.jpg" width="400">
 
 ---
 
