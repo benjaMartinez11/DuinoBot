@@ -241,10 +241,10 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 ## **Foto dela Placa duinobot v2.3**
 <img src="imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
 
-## **Diagrama de Bloques**
+## **Diagrama de Bloques de conexion**
 <img src="imagenes/Captura de pantalla_2025-12-05_11-07-12.png" width="400">
 
-## **Diagrama de Flujo**
+## **Diagrama de Bloques de comunicacion**
 <img src="imagenes/Captura de pantalla_2025-12-05_11-08-22.png" width="400">
 
 ## **Diagrama Comunicacion Basica**
