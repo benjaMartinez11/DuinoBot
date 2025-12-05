@@ -1,3 +1,5 @@
+//Esto codigo es para controlar los motores del robot, tambien se utiliza el led.
+
 #include <DCMotor.h>
 #define LED_ROJO 13
 DCMotor motor0(M0_EN, M0_D0, M0_D1);

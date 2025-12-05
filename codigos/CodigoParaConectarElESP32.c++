@@ -1,3 +1,6 @@
+//Codigo del ESP32, aqui se hace una conexion hacia un servidor MQTT, y al conectarse se prende un led(pin:02)
+//para avisarnos que el ESP32 suscrito al MQTT, Tambien se conecta a internet. 
+
 #include <WiFi.h>
 
 #include <PubSubClient.h>
