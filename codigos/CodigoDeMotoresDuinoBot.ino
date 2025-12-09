@@ -30,34 +30,35 @@ void loop()
   if (Serial.available() > 0)
   {
   char letra = Serial.read();
-  if (letra == 'F')
+  if (letra == 'F')//acelera
   {
    	acelerarMotores(-1, 1);
   }
-  else if (letra == 'B')
+  else if (letra == 'B')//rotrocede
   {
    	acelerarMotores(1, -1);
   }
-  else if (letra == 'R')
+  else if (letra == 'R')//Izquierda
   {
 	motor0.setSpeed(70.0);
 	motor1.setSpeed(00.0);
   }
-  else if (letra == 'L')
+  else if (letra == 'L')//Derecha
   {
 	motor0.setSpeed(00.0);
 	motor1.setSpeed(-70.0);
   }
-  else if (letra == 'S') {
+  else if (letra == 'S')//Prende el led
+  {
 	estado = !estado;
 	digitalWrite(LED_ROJO, estado);
   }
-  else if (letra == 'X')
+  else if (letra == 'X')//Detiene el robot
   {
 	motor0.brake();
 	motor1.brake();
   }
-  else if (letra == '0')
+  else if (letra == '0')//Deciende la velocidad no es un boton
   {
 	motor0.setSpeed(00.0);
 	motor1.setSpeed(00.0);
