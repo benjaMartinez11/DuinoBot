@@ -31,7 +31,7 @@
 
 # 🛠️ Pasos (Windows / macOS / Linux)
 
-1.Instalar Arduino IDE
+1.Instalar Arduino IDE:
 
   Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
 
@@ -99,7 +99,7 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
     Programá un UNO/Nano con el sketch ArduinoISP (Arduino → Examples → 11.ArduinoISP → ArduinoISP). Conectá ISP (MOSI/MISO/SCK/GND/Reset) según las tablas del repositorio.
 
-    En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader.
+    En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora y Tools → Burn Bootloader.
 
 ---
 
