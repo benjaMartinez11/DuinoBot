@@ -26,8 +26,8 @@
 
   Baja e instala la versión oficial (IDE 1.8.x o IDE 2.x funcionan). Página oficial de descargas. arduino.cc
 
-# Nota: El IDE 1.8.X es usada para el duinobot.
-# El IDE 2.X fue usada para el NodeMCU-32.
+  Nota: El IDE 1.8.X es usada para el duinobot.
+  El IDE 2.X fue usada para el NodeMCU-32.
 
 2.Agregar el soporte del DuinoBot al Board Manager
 
