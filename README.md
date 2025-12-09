@@ -12,18 +12,18 @@
 
 ## 📸 Foto del robot
 
-<img src="imagenes/1000117783.jpg" width="400">
+<img src="imagenes y videos/1000117783.jpg" width="400">
 
 ## 📸 Foto del circuito del robot
 
-<img src="imagenes/IMG_20251201_191544856_HDR.jpg" width="400">
+<img src="imagenes y videos/IMG_20251201_191544856_HDR.jpg" width="400">
 
 
 ## Video del proyecto andando
 
 <figure class="video_container">
  <video controls="true" allowfullscreen="true">
- <source src="duinobotconesp.mp4" type="video/mp4">
+ <source src="imagenes y videos/duinobotconesp.mp4" type="video/mp4">
  </video>
 </figure>
 
@@ -105,39 +105,39 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
 ## **Conexiones del NodeMCU-32**
 
-<img src="imagenes/Captura de pantalla_2025-12-05_10-54-16.png" width="400">
+<img src="imagenes y videos/Captura de pantalla_2025-12-05_10-54-16.png" width="400">
 
 
 ## **Foto del ESP-32**
 
-<img src="imagenes/esp32-devkitc-v4-esp32-wifi-micro-usb.jpg" width="400">
+<img src="imagenes y videos/esp32-devkitc-v4-esp32-wifi-micro-usb.jpg" width="400">
 
 
 
 ## **Foto dela Placa duinobot v2.3**
-<img src="imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
+<img src="imagenes y videos/IMG_20251113_110920156_HDR.jpg" width="400">
 
 
 ## **Foto del cuircuito completo**
-<img src="imagenes/circuitocompleto.jpg" width ="400">
-<img src="imagenes/partedecomunicacion.jpg" width ="400">
+<img src="imagenes y videos/circuitocompleto.jpg" width ="400">
+<img src="imagenes y videos/partedecomunicacion.jpg" width ="400">
 
 El adaptador se encarga de traducir la señal digital para asegurar que el ESP32 y el Duinobot sean compatibles en términos de voltaje, evitando posibles fallos en la comunicación.
 
 ## **Diagrama de Bloques de conexion**
-<img src="imagenes/Conexiones.png" width="400">
+<img src="imagenes y videos/Conexiones.png" width="400">
 
 Aqui el usuario envía un mensaje desde su PC a un servidor MQTT. Este mensaje es recibido por el ESP32, que lo transmite al Duinobot, activando los motores del robot según la instrucción recibida, Los mensajes controlan los movimientos del robot, indicando si los motores deben girar hacia adelante, atrás, o realizar otras acciones específicas de movimiento.
 
 El adaptador se encarga de traducir la señal digital para asegurar que el ESP32 y el Duinobot sean compatibles en términos de voltaje, evitando posibles fallos en la comunicación.
 
 ## **Diagrama de Bloques de comunicacion**
-<img src="imagenes/mensaje.png" width="400">
+<img src="imagenes y videos/mensaje.png" width="400">
 
 Cuando la PC envía un mensaje al broker MQTT. Este mensaje es recibido por el ESP32, que lo transmite a través del puerto Serial2 al Duinobot para controlar los motores, el otro Serial es usado por el programador para ver si el mensaje se recibe correctamente.
 
 ## **Diagrama Flujo**
-<img src="imagenes/Captura de pantalla_2025-12-09_15-58-27.png" width="400">
+<img src="imagenes y videos/Captura de pantalla_2025-12-09_15-58-27.png" width="400">
 Aqui vemos como es el funcionamineto al mandar un mensaje desde el broker y como el Duinobot reacciona a los mensajes recibidos
 
 ---
