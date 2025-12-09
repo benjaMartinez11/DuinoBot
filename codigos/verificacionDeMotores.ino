@@ -1,4 +1,3 @@
-//Codigo para la verificacion del envio de datos, monitoreo del RX y TX, control de comunicacion.
 
 #include <DCMotor.h>
 

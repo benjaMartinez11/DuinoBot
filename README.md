@@ -138,5 +138,5 @@ El adaptador se encarga de traducir la señal digital para asegurar que el ESP32
 Cuando la PC envía un mensaje al broker MQTT. Este mensaje es recibido por el ESP32, que lo transmite a través del puerto Serial2 al Duinobot para controlar los motores, el otro Serial es usado por el programador para ver si el mensaje se recibe correctamente.
 
 ## **Diagrama Flujo**
-<img src="imagenes/Captura de pantalla_2025-12-02_14-35-26.png" width="400">
+<img src="imagenes/Captura de pantalla_2025-12-09_15-58-27.png" width="400">
 Aqui vemos como es el funcionamineto al mandar un mensaje desde el broker y como el Duinobot reacciona a los mensajes recibidos
