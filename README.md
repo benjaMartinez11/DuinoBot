@@ -18,6 +18,14 @@
 
 <img src="imagenes/IMG_20251201_191544856_HDR.jpg" width="400">
 
+
+## Video del proyecto andando
+
+<figure class="video_container">
+ <video controls="true" allowfullscreen="true">
+ <source src="duinobotconesp.mp4" type="video/mp4">
+ </video>
+</figure>
 ---
 
 # 🛠️ Pasos (Windows / macOS / Linux)
