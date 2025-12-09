@@ -128,14 +128,14 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 ## **Diagrama de Bloques de conexion**
 <img src="imagenes/Conexiones.png" width="400">
 
-Aqui el usuario envía un mensaje desde su PC a un servidor MQTT. Este mensaje es recibido por el ESP32, que lo transmite al Duinobot, activando los motores del robot según la instrucción recibida.
+Aqui el usuario envía un mensaje desde su PC a un servidor MQTT. Este mensaje es recibido por el ESP32, que lo transmite al Duinobot, activando los motores del robot según la instrucción recibida, Los mensajes controlan los movimientos del robot, indicando si los motores deben girar hacia adelante, atrás, o realizar otras acciones específicas de movimiento.
 
-El adaptador se encarga de traducir la señal digital para asegurar que el ESP32 y el Duinobot sean compatibles en términos de voltaje, evitando posibles fallos en la comunicación..
+El adaptador se encarga de traducir la señal digital para asegurar que el ESP32 y el Duinobot sean compatibles en términos de voltaje, evitando posibles fallos en la comunicación.
 
 ## **Diagrama de Bloques de comunicacion**
 <img src="imagenes/mensaje.png" width="400">
 
-Cuando la PC envía un mensaje al broker MQTT. Este mensaje es recibido por el ESP32, que lo transmite a través del puerto Serial2 al Duinobot para controlar los motores, según la instrucción recibida.
+Cuando la PC envía un mensaje al broker MQTT. Este mensaje es recibido por el ESP32, que lo transmite a través del puerto Serial2 al Duinobot para controlar los motores, el otro Serial es usado por el programador para ver si el mensaje se recibe correctamente.
 
 ## **Diagrama Flujo**
 <img src="imagenes/Captura de pantalla_2025-12-02_14-35-26.png" width="400">
