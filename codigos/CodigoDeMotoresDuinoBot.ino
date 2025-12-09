@@ -1,4 +1,4 @@
-//Esto codigo es para controlar los motores del robot, tambien se utiliza el led.
+//Esto codigo es para controlar los motores del robot, tambien se utiliza un led.
 
 #include <DCMotor.h>
 #define LED_ROJO 13
@@ -30,11 +30,11 @@ void loop()
   if (Serial.available() > 0)
   {
   char letra = Serial.read();
-  if (letra == 'F')//acelera
+  if (letra == 'F')//Acelera
   {
    	acelerarMotores(-1, 1);
   }
-  else if (letra == 'B')//rotrocede
+  else if (letra == 'B')//Retrocede
   {
    	acelerarMotores(1, -1);
   }
