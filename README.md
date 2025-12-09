@@ -26,6 +26,7 @@
  <source src="duinobotconesp.mp4" type="video/mp4">
  </video>
 </figure>
+
 ---
 
 # 🛠️ Pasos (Windows / macOS / Linux)
@@ -100,9 +101,6 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
     En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader.
 
-
-
-
 ---
 
 ## **Conexiones del NodeMCU-32**
@@ -140,3 +138,5 @@ Cuando la PC envía un mensaje al broker MQTT. Este mensaje es recibido por el E
 ## **Diagrama Flujo**
 <img src="imagenes/Captura de pantalla_2025-12-09_15-58-27.png" width="400">
 Aqui vemos como es el funcionamineto al mandar un mensaje desde el broker y como el Duinobot reacciona a los mensajes recibidos
+
+---
