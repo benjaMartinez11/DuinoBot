@@ -1,4 +1,4 @@
-
+//berificacion de Motores del robot
 #include <DCMotor.h>
 
 DCMotor motor0(M0_EN, M0_D0, M0_D1);
