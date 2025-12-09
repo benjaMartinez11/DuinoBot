@@ -45,13 +45,13 @@
 
       https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_DuinobotAVRBoards_index.json
 
-Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usás IDE 2.x). GitHub+1
+Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usás IDE 2.x).
 
 3.Instalar el paquete de placas
 
   Arduino IDE → Tools (Herramientas) → Board (Placa) → Boards Manager…
 
-  Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente. GitHub
+  Busca Duinobot AVR Boards y click en Install. Reinicia el IDE si no aparece inmediatamente.
 
 4.Seleccionar la placa y la configuración
 
@@ -59,13 +59,13 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
   Tools → CPU / Variant → elegí ATmega1284 (si hay sub-opciones).
 
-  Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). GitHub
+  Tools → Clock / Frequency → por defecto 16 MHz (el paquete documenta soporte a 20/16/8/1 MHz — confirmá cuál tiene tu placa). 
 
 5.Seleccionar puerto y programador
 
   Conectá el DuinoBot por USB (o el adaptador USB-Serial que venga). Tools → Port → seleccioná el puerto COM/tty asignado.
 
-  En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible. GitHub
+  En la mayoría de los casos para cargar sketches por USB no necesitás cambiar el "Programmer". Si necesitás grabar el bootloader (ver abajo) entonces usarás Arduino as ISP u otro programador compatible.
     
 
  6.Subir un sketch de prueba (Blink)
@@ -92,13 +92,13 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 
   Confirmá puerto y drivers (ej. chips CH340/FTDI).
 
-  Si la placa no tiene bootloader compatible o nunca se le grabó el bootloader del paquete, puede ser necesario grabar el bootloader usando otra placa Arduino como programador (ArduinoISP) — el repo oficial del paquete explica cómo hacerlo (conexiones y pasos). GitHub+1
+  Si la placa no tiene bootloader compatible o nunca se le grabó el bootloader del paquete, puede ser necesario grabar el bootloader usando otra placa Arduino como programador (ArduinoISP) — el repo oficial del paquete explica cómo hacerlo (conexiones y pasos). 
 
   8.Quemar bootloader (solo si indica el paquete / la placa lo requiere)
 
     Programá un UNO/Nano con el sketch ArduinoISP (Arduino → Examples → 11.ArduinoISP → ArduinoISP). Conectá ISP (MOSI/MISO/SCK/GND/Reset) según las tablas del repositorio.
 
-    En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader. GitHub
+    En el IDE seleccioná la placa Duinobot v1.2 / v2.3 apropiada en Tools, el puerto de la placa programadora, y Tools → Burn Bootloader.
 
 
 
@@ -119,11 +119,22 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 ## **Foto dela Placa duinobot v2.3**
 <img src="imagenes/IMG_20251113_110920156_HDR.jpg" width="400">
 
+
+## **Foto del cuircuito completo**
+<img src="imagenes/circuitocompleto.jpg" width ="400">
+<img src="imagenes/partedecomunicacion.jpg" width ="400">
+
+
 ## **Diagrama de Bloques de conexion**
-<img src="imagenes/Captura de pantalla_2025-12-05_11-07-12.png" width="400">
+<img src="imagenes/Conexiones.png" width="400">
+
+Aqui el usuario esta enviando un mensaje desde la PC, que es enviado a un servidor MQTT, donde el que lo recibe es el ESP32 para mandarselo al Duinobot.
+El adaptador traduce la señal digital para que el ESP32 y el Duinobot no tengan problemas de voltaje.
 
 ## **Diagrama de Bloques de comunicacion**
 <img src="imagenes/Captura de pantalla_2025-12-05_11-08-22.png" width="400">
+
+La pc manda un mensaje al MQTT y este mismo se lo manda al ESP32, el ESP32 lo manda atravez del serial2 para comunicarse con el Duinobot, y tambien esta usando el serial(0) para mostrar desde la pc que el mensaje esta llegando.
 
 ## **Diagrama Flujo**
 <img src="imagenes/Captura de pantalla_2025-12-02_14-35-26.png" width="400">
