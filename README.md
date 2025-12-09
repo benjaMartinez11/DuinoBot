@@ -122,6 +122,7 @@ Guarda. (Puedes añadir varias URLs separadas por comas o en el diálogo si usá
 <img src="imagenes/circuitocompleto.jpg" width ="400">
 <img src="imagenes/partedecomunicacion.jpg" width ="400">
 
+El adaptador se encarga de traducir la señal digital para asegurar que el ESP32 y el Duinobot sean compatibles en términos de voltaje, evitando posibles fallos en la comunicación.
 
 ## **Diagrama de Bloques de conexion**
 <img src="imagenes/Conexiones.png" width="400">
